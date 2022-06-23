@@ -18,7 +18,7 @@ while (userInput !== "exit") {
     else if (userInput === "delete") {
         const index = parseInt(prompt("Enter the Index of what you want to delete"));
         if (!Number.isNaN(index)) {
-            const deleted = todoArray.splice(userInput, 1);
+            const deleted = todoArray.splice(index, 1);
             console.log(`Deleted Item: ${deleted}`);
         }
         else {
